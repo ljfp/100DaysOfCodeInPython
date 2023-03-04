@@ -5,8 +5,8 @@ That's how far the map took you. Now you're on your own.
 Good luck finding the treasure.
 '''
 
-import sys
 import os
+import sys
 
 # Python is not smart enough to find relative paths. So, this trick is needed
 # in order to execute the script from root of the repository.
