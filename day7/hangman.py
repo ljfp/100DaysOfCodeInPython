@@ -1,4 +1,4 @@
-''''
+'''
 Hangman game.
 You have to guess the hidden word in 7 tries or you get hanged!
 You can see how many characters are in the hidden word.
