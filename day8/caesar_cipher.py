@@ -46,7 +46,7 @@ def decode(code, shift):
     decoded_message = ""
     for letter in code:
         position = ALPHABET.index(letter)
-        new_position = position - shift
+        new_position = position - (shift % 26)
         new_letter  = ALPHABET[new_position]
         decoded_message += new_letter
     return decoded_message
@@ -60,7 +60,7 @@ def encode(message, shift):
     encoded_message = ""
     for letter in message:
         position = ALPHABET.index(letter)
-        new_position = position + shift
+        new_position = position + (shift % 26)
         new_letter  = ALPHABET[new_position]
         encoded_message += new_letter
     return encoded_message
